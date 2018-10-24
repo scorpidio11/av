@@ -12,7 +12,7 @@
 let express = require('express');
 let app = express();
 // any # 80 and above
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 let path = require("path");
 
 app.use(express.urlencoded({extended: true}));
